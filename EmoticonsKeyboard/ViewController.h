@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIImage+animatedGIF.h"
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *imageViews;
 
 
 @end

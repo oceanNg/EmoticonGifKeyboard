@@ -11,9 +11,14 @@
 		8470266D1C955E4400363091 /* emoticonsKeyboardFrame.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 847026651C955E4400363091 /* emoticonsKeyboardFrame.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		847026731C955EE500363091 /* emoticionsKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847026721C955EE500363091 /* emoticionsKeyboard.storyboard */; };
 		847026751C957D8900363091 /* keyart.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847026741C957D8900363091 /* keyart.xcassets */; };
-		847026781C9581AD00363091 /* sticker in Resources */ = {isa = PBXBuildFile; fileRef = 847026761C9581AD00363091 /* sticker */; };
-		847026791C9581AD00363091 /* gif in Resources */ = {isa = PBXBuildFile; fileRef = 847026771C9581AD00363091 /* gif */; };
 		8470267B1C958AB300363091 /* collectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8470267A1C958AB300363091 /* collectionView.xib */; };
+		C85119391C991BE6003DFBB4 /* GifsDataList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85119381C991BE6003DFBB4 /* GifsDataList.plist */; };
+		C851194A1C9959F8003DFBB4 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C85119491C9959F8003DFBB4 /* UIImage+animatedGIF.m */; };
+		C851194B1C9959F8003DFBB4 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C85119491C9959F8003DFBB4 /* UIImage+animatedGIF.m */; };
+		C851194E1C995B9E003DFBB4 /* gif in Resources */ = {isa = PBXBuildFile; fileRef = C851194C1C995B9E003DFBB4 /* gif */; };
+		C851194F1C995B9E003DFBB4 /* gif in Resources */ = {isa = PBXBuildFile; fileRef = C851194C1C995B9E003DFBB4 /* gif */; };
+		C85119501C995B9E003DFBB4 /* sticker in Resources */ = {isa = PBXBuildFile; fileRef = C851194D1C995B9E003DFBB4 /* sticker */; };
+		C85119511C995B9E003DFBB4 /* sticker in Resources */ = {isa = PBXBuildFile; fileRef = C851194D1C995B9E003DFBB4 /* sticker */; };
 		C896FC0B1C93E42100DDFB6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C896FC0A1C93E42100DDFB6F /* main.m */; };
 		C896FC0E1C93E42100DDFB6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C896FC0D1C93E42100DDFB6F /* AppDelegate.m */; };
 		C896FC111C93E42100DDFB6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C896FC101C93E42100DDFB6F /* ViewController.m */; };
@@ -23,7 +28,6 @@
 		C896FC1C1C93E42100DDFB6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C896FC1A1C93E42100DDFB6F /* LaunchScreen.storyboard */; };
 		C896FC271C93E42100DDFB6F /* EmoticonsKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C896FC261C93E42100DDFB6F /* EmoticonsKeyboardTests.m */; };
 		C896FC321C93E42100DDFB6F /* EmoticonsKeyboardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C896FC311C93E42100DDFB6F /* EmoticonsKeyboardUITests.m */; };
-		C8B695371C980FE700501B7A /* UIGifImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B695361C980FE700501B7A /* UIGifImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,9 +75,12 @@
 		8470266A1C955E4400363091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847026721C955EE500363091 /* emoticionsKeyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = emoticionsKeyboard.storyboard; sourceTree = "<group>"; };
 		847026741C957D8900363091 /* keyart.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = keyart.xcassets; sourceTree = "<group>"; };
-		847026761C9581AD00363091 /* sticker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sticker; sourceTree = "<group>"; };
-		847026771C9581AD00363091 /* gif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gif; sourceTree = "<group>"; };
 		8470267A1C958AB300363091 /* collectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = collectionView.xib; sourceTree = "<group>"; };
+		C85119381C991BE6003DFBB4 /* GifsDataList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GifsDataList.plist; sourceTree = "<group>"; };
+		C85119481C9959F8003DFBB4 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		C85119491C9959F8003DFBB4 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		C851194C1C995B9E003DFBB4 /* gif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gif; sourceTree = "<group>"; };
+		C851194D1C995B9E003DFBB4 /* sticker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sticker; sourceTree = "<group>"; };
 		C896FC061C93E42100DDFB6F /* EmoticonsKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoticonsKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C896FC0A1C93E42100DDFB6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C896FC0C1C93E42100DDFB6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,7 +98,6 @@
 		C896FC2D1C93E42100DDFB6F /* EmoticonsKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmoticonsKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C896FC311C93E42100DDFB6F /* EmoticonsKeyboardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmoticonsKeyboardUITests.m; sourceTree = "<group>"; };
 		C896FC331C93E42100DDFB6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8B695361C980FE700501B7A /* UIGifImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIGifImage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B695371C980FE700501B7A /* UIGifImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,15 +135,13 @@
 		847026661C955E4400363091 /* emoticonsKeyboardFrame */ = {
 			isa = PBXGroup;
 			children = (
-				C8B695361C980FE700501B7A /* UIGifImage.framework */,
-				847026761C9581AD00363091 /* sticker */,
-				847026771C9581AD00363091 /* gif */,
 				847026671C955E4400363091 /* KeyboardViewController.h */,
 				847026681C955E4400363091 /* KeyboardViewController.m */,
 				847026721C955EE500363091 /* emoticionsKeyboard.storyboard */,
 				8470266A1C955E4400363091 /* Info.plist */,
 				847026741C957D8900363091 /* keyart.xcassets */,
 				8470267A1C958AB300363091 /* collectionView.xib */,
+				C85119381C991BE6003DFBB4 /* GifsDataList.plist */,
 			);
 			path = emoticonsKeyboardFrame;
 			sourceTree = "<group>";
@@ -168,6 +171,10 @@
 		C896FC081C93E42100DDFB6F /* EmoticonsKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				C851194C1C995B9E003DFBB4 /* gif */,
+				C851194D1C995B9E003DFBB4 /* sticker */,
+				C85119481C9959F8003DFBB4 /* UIImage+animatedGIF.h */,
+				C85119491C9959F8003DFBB4 /* UIImage+animatedGIF.m */,
 				C896FC0C1C93E42100DDFB6F /* AppDelegate.h */,
 				C896FC0D1C93E42100DDFB6F /* AppDelegate.m */,
 				C896FC0F1C93E42100DDFB6F /* ViewController.h */,
@@ -334,9 +341,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847026781C9581AD00363091 /* sticker in Resources */,
+				C85119511C995B9E003DFBB4 /* sticker in Resources */,
 				8470267B1C958AB300363091 /* collectionView.xib in Resources */,
-				847026791C9581AD00363091 /* gif in Resources */,
+				C85119391C991BE6003DFBB4 /* GifsDataList.plist in Resources */,
+				C851194F1C995B9E003DFBB4 /* gif in Resources */,
 				847026731C955EE500363091 /* emoticionsKeyboard.storyboard in Resources */,
 				847026751C957D8900363091 /* keyart.xcassets in Resources */,
 			);
@@ -346,7 +354,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85119501C995B9E003DFBB4 /* sticker in Resources */,
 				C896FC1C1C93E42100DDFB6F /* LaunchScreen.storyboard in Resources */,
+				C851194E1C995B9E003DFBB4 /* gif in Resources */,
 				C896FC191C93E42100DDFB6F /* Assets.xcassets in Resources */,
 				C896FC141C93E42100DDFB6F /* Main.storyboard in Resources */,
 			);
@@ -373,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C851194B1C9959F8003DFBB4 /* UIImage+animatedGIF.m in Sources */,
 				847026691C955E4400363091 /* KeyboardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +396,7 @@
 				C896FC111C93E42100DDFB6F /* ViewController.m in Sources */,
 				C896FC0E1C93E42100DDFB6F /* AppDelegate.m in Sources */,
 				C896FC0B1C93E42100DDFB6F /* main.m in Sources */,
+				C851194A1C9959F8003DFBB4 /* UIImage+animatedGIF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,9 +505,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -514,7 +528,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -537,9 +552,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -552,6 +569,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -562,10 +580,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = EmoticonsKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.carpediem.EmoticonsKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -574,10 +595,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = EmoticonsKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carpediem.EmoticonsKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

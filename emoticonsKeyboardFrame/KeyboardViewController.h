@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <UIGifImage/UIGifImage.h>
+
+
+#import "UIImage+animatedGIF.h"
 
 @interface KeyboardViewController : UIInputViewController<UICollectionViewDataSource,UICollectionViewDelegate, UIScrollViewDelegate>
 {

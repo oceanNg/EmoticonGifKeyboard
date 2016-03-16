@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,24 +18,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="45t-1m-c8A">
-                                <rect key="frame" x="0.0" y="100" width="320" height="200"/>
+                                <rect key="frame" x="0.0" y="100" width="320" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="BdS-Im-dsu"/>
+                                    <constraint firstAttribute="height" constant="100" id="BdS-Im-dsu"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Y6-Kp-0us">
+                                <rect key="frame" x="30" y="229" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="HDH-x8-nLB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9Y6-Kp-0us" firstAttribute="top" secondItem="45t-1m-c8A" secondAttribute="bottom" constant="29" id="58o-Yk-biZ"/>
                             <constraint firstItem="45t-1m-c8A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="G6U-gb-SIq"/>
                             <constraint firstAttribute="trailing" secondItem="45t-1m-c8A" secondAttribute="trailing" id="Jhv-9s-fUH"/>
+                            <constraint firstAttribute="trailing" secondItem="9Y6-Kp-0us" secondAttribute="trailing" constant="50" id="ign-Cx-ogF"/>
+                            <constraint firstItem="9Y6-Kp-0us" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="pku-5A-Jk0"/>
                             <constraint firstItem="45t-1m-c8A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zbM-sk-YF2"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="imageViews" destination="9Y6-Kp-0us" id="bes-4P-fee"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

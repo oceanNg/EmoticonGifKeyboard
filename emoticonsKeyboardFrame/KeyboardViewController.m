@@ -108,13 +108,17 @@ static const
 }
 -  (void) loadGifsData
 {
-    NSArray *PhotoArray = [[NSBundle mainBundle] pathsForResourcesOfType:@"gif" inDirectory:@"gif"];
-    NSMutableArray *imgQueue = [[NSMutableArray alloc] initWithCapacity:PhotoArray.count];
-    for (NSString* path in PhotoArray) {
-        [imgQueue addObject:[UIImage imageWithContentsOfFile:path]];
-    }
     gifsDatalist =[@[]mutableCopy];
-    gifsDatalist = imgQueue;
+
+    NSString * menuPlistPath = [[NSBundle mainBundle] pathForResource:@"GifsDataList" ofType:@"plist"];
+    gifsDatalist= [NSMutableArray  arrayWithContentsOfFile:menuPlistPath];
+    
+//    NSArray *PhotoArray = [[NSBundle mainBundle] pathsForResourcesOfType:@"gif" inDirectory:@"gif"];
+//    NSMutableArray *imgQueue = [[NSMutableArray alloc] initWithCapacity:PhotoArray.count];
+//    for (NSString* path in PhotoArray) {
+//        [imgQueue addObject:[UIImage imageWithContentsOfFile:path]];
+//    }
+//    gifsDatalist = imgQueue;
 
 }
 
@@ -188,7 +192,7 @@ static const
          columns++;
         imageView.clipsToBounds = YES;
         [scrollviewSticker addSubview:imageView];
-        scrollviewSticker.contentSize = CGSizeMake(screenWidth,stickerWight * rowNumSticker);
+        scrollviewSticker.contentSize = CGSizeMake(scrollview.frame.size.width -5,stickerWight * rowNumSticker);
         
     }
     
@@ -213,18 +217,18 @@ static const
                                         rowG * gifWight +3 + rowG * 3,
                                         gifWight,
                                         gifWight);
-        
+        NSDictionary * dic = gifsDatalist[k];
+        NSURL *url1 = [[NSBundle mainBundle] URLForResource:dic[@"name"] withExtension:@"gif"];
         UIImageView *imageViews = [[UIImageView alloc] initWithFrame:currentRect];
         
         imageViews.userInteractionEnabled = YES;
         imageViews.contentMode = UIViewContentModeScaleToFill;
         columnG++;
-        imageViews.image = [gifsDatalist objectAtIndex:k];
+        imageViews.image  = [UIImage animatedImageWithAnimatedGIFURL:url1];
         imageViews.clipsToBounds = YES;
        
-        
         [scrollviewGifs addSubview:imageViews];
-        scrollviewGifs.contentSize = CGSizeMake(screenWidth ,gifWight * rowNumGits +10 + rowG * 3    );
+        scrollviewGifs.contentSize = CGSizeMake(scrollview.frame.size.width -5 ,gifWight * rowNumGits +10 + rowG * 3    );
         
     }
 
