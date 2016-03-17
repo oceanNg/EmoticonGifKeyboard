@@ -40,6 +40,7 @@ static const
     [self setupViewChangeWhileShowSticker];
     [self loadGifsData];
     [self loadStickersData];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pasteImage) name:UIPasteboardChangedNotification object:nil];
 
     [self setupScrollView];
     
@@ -92,6 +93,10 @@ static const
     [self setUpSubScrollView];
 
 
+}
+
+- (void) pasteImage{
+    
 }
 #pragma  mark -- load data list --
 
@@ -186,6 +191,11 @@ static const
                                         stickerWight);
         
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:currentRect];
+        imageView.userInteractionEnabled = YES;
+        imageView.tag = 100 + i;
+        UITapGestureRecognizer * imageTapGasture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(copyStickerimage:)];
+        imageTapGasture.numberOfTapsRequired =1;
+        [imageView addGestureRecognizer:imageTapGasture];
         imageView.image = stickersDatalist[i];
         imageView.userInteractionEnabled = YES;
         imageView.contentMode = UIViewContentModeScaleAspectFill;
@@ -220,7 +230,10 @@ static const
         NSDictionary * dic = gifsDatalist[k];
         NSURL *url1 = [[NSBundle mainBundle] URLForResource:dic[@"name"] withExtension:@"gif"];
         UIImageView *imageViews = [[UIImageView alloc] initWithFrame:currentRect];
-        
+        imageViews.tag = 1000 + k;
+        UITapGestureRecognizer * imageTapGasture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(copyImageToPasteboard:)];
+        imageTapGasture.numberOfTapsRequired =1;
+        [imageViews addGestureRecognizer:imageTapGasture];
         imageViews.userInteractionEnabled = YES;
         imageViews.contentMode = UIViewContentModeScaleToFill;
         columnG++;
@@ -236,6 +249,16 @@ static const
     
 }
 
+
+- (void) copyStickerimage:(UITapGestureRecognizer *) tapGes
+{
+    UIImageView * imageViews = (UIImageView *) tapGes.view;
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+//    NSData *data = [NSData dataWithContentsOfFile:filePath];
+    [pasteboard setImage:imageViews.image];
+    [self.textDocumentProxy insertText:[pasteboard string]];
+    
+}
 - (void)scrollViewDidScroll:(UIScrollView *)_scrollView
 {
     if (_scrollView.tag == 10) {
@@ -287,8 +310,12 @@ static const
 
 - (void)textWillChange:(id<UITextInput>)textInput
 {
+    
+
+    
     // The app is about to change the document's contents. Perform any preparation here.
 }
+
 
 - (void)textDidChange:(id<UITextInput>)textInput
 {
