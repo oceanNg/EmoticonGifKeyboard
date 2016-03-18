@@ -31,7 +31,7 @@
 			<key>IsASCIICapable</key>
 			<false/>
 			<key>PrefersRightToLeft</key>
-			<false/>
+			<true/>
 			<key>PrimaryLanguage</key>
 			<string>en-US</string>
 			<key>RequestsOpenAccess</key>

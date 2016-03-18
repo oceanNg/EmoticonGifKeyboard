@@ -19,6 +19,7 @@
 		C851194F1C995B9E003DFBB4 /* gif in Resources */ = {isa = PBXBuildFile; fileRef = C851194C1C995B9E003DFBB4 /* gif */; };
 		C85119501C995B9E003DFBB4 /* sticker in Resources */ = {isa = PBXBuildFile; fileRef = C851194D1C995B9E003DFBB4 /* sticker */; };
 		C85119511C995B9E003DFBB4 /* sticker in Resources */ = {isa = PBXBuildFile; fileRef = C851194D1C995B9E003DFBB4 /* sticker */; };
+		C857BED61C9BB253004BAE85 /* StickerDataList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C857BED51C9BB253004BAE85 /* StickerDataList.plist */; };
 		C896FC0B1C93E42100DDFB6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C896FC0A1C93E42100DDFB6F /* main.m */; };
 		C896FC0E1C93E42100DDFB6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C896FC0D1C93E42100DDFB6F /* AppDelegate.m */; };
 		C896FC111C93E42100DDFB6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C896FC101C93E42100DDFB6F /* ViewController.m */; };
@@ -81,6 +82,7 @@
 		C85119491C9959F8003DFBB4 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		C851194C1C995B9E003DFBB4 /* gif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gif; sourceTree = "<group>"; };
 		C851194D1C995B9E003DFBB4 /* sticker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sticker; sourceTree = "<group>"; };
+		C857BED51C9BB253004BAE85 /* StickerDataList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StickerDataList.plist; sourceTree = "<group>"; };
 		C896FC061C93E42100DDFB6F /* EmoticonsKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoticonsKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C896FC0A1C93E42100DDFB6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C896FC0C1C93E42100DDFB6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				847026741C957D8900363091 /* keyart.xcassets */,
 				8470267A1C958AB300363091 /* collectionView.xib */,
 				C85119381C991BE6003DFBB4 /* GifsDataList.plist */,
+				C857BED51C9BB253004BAE85 /* StickerDataList.plist */,
 			);
 			path = emoticonsKeyboardFrame;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				8470267B1C958AB300363091 /* collectionView.xib in Resources */,
 				C85119391C991BE6003DFBB4 /* GifsDataList.plist in Resources */,
 				C851194F1C995B9E003DFBB4 /* gif in Resources */,
+				C857BED61C9BB253004BAE85 /* StickerDataList.plist in Resources */,
 				847026731C955EE500363091 /* emoticionsKeyboard.storyboard in Resources */,
 				847026751C957D8900363091 /* keyart.xcassets in Resources */,
 			);

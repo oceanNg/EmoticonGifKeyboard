@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>at-work-icon.png</string>
+		<key>name</key>
+		<string>at-work-icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>BRB-Icon.png</string>
+		<key>name</key>
+		<string>BRB-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Busy-Icon.png</string>
+		<key>name</key>
+		<string>Busy-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Bye-Icon.png</string>
+		<key>name</key>
+		<string>Bye-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Cool-Icon.png</string>
+		<key>name</key>
+		<string>Cool-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Dislike-Icon.png</string>
+		<key>name</key>
+		<string>Dislike-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Hi-Icon.png</string>
+		<key>name</key>
+		<string>Hi-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Hi-Sexy-Icon.png</string>
+		<key>name</key>
+		<string>Hi-Sexy-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>I-hate-you-Icon.png</string>
+		<key>name</key>
+		<string>I-hate-you-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>I-love-you-Icon.png</string>
+		<key>name</key>
+		<string>I-love-you-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>I-miss-you-Icon.png</string>
+		<key>name</key>
+		<string>I-miss-you-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Like-Icon-2.png</string>
+		<key>name</key>
+		<string>Like-Icon-2</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>like-Icon.png</string>
+		<key>name</key>
+		<string>like-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>LOL-Icon.png</string>
+		<key>name</key>
+		<string>LOL-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>No-way-Icon.png</string>
+		<key>name</key>
+		<string>No-way-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>OMG-Icon.png</string>
+		<key>name</key>
+		<string>OMG-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Shit-Icon.png</string>
+		<key>name</key>
+		<string>Shit-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Tired-Icon.png</string>
+		<key>name</key>
+		<string>Tired-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>WTF-Icon.png
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+	&lt;key&gt;image&lt;/key&gt;
+	&lt;string&gt;Tired-Icon.png&lt;/string&gt;
+	&lt;key&gt;name&lt;/key&gt;
+	&lt;string&gt;Tired-Icon&lt;/string&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+	&lt;key&gt;image&lt;/key&gt;
+	&lt;string&gt;Tired-Icon.png&lt;/string&gt;
+	&lt;key&gt;name&lt;/key&gt;
+	&lt;string&gt;Tired-Icon&lt;/string&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</string>
+		<key>name</key>
+		<string>WTF-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Xoxo-Icon.png</string>
+		<key>name</key>
+		<string>Xoxo-Icon</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>Yup-Icon.png</string>
+		<key>name</key>
+		<string>Yup-Icon</string>
+	</dict>
+</array>
+</plist>

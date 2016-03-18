@@ -40,7 +40,6 @@ static const
     [self setupViewChangeWhileShowSticker];
     [self loadGifsData];
     [self loadStickersData];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pasteImage) name:UIPasteboardChangedNotification object:nil];
 
     [self setupScrollView];
     
@@ -102,13 +101,16 @@ static const
 
 -(void)loadStickersData
 {
-    NSArray *PhotoArray = [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:@"sticker"];
-    NSMutableArray *imgQueue = [[NSMutableArray alloc] initWithCapacity:PhotoArray.count];
-    for (NSString* path in PhotoArray) {
-        [imgQueue addObject:[UIImage imageWithContentsOfFile:path]];
-    }
     stickersDatalist =[@[]mutableCopy];
-    stickersDatalist = imgQueue;
+
+    NSString * menuPlistPath = [[NSBundle mainBundle] pathForResource:@"StickerDataList" ofType:@"plist"];
+    stickersDatalist= [NSMutableArray  arrayWithContentsOfFile:menuPlistPath];
+   // NSArray *PhotoArray = [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:@"sticker"];
+  //  NSMutableArray *imgQueue = [[NSMutableArray alloc] initWithCapacity:PhotoArray.count];
+  //  for (NSString* path in PhotoArray) {
+    //    [imgQueue addObject:[UIImage imageWithContentsOfFile:path]];
+  //  }
+  //  stickersDatalist = imgQueue;
     
 }
 -  (void) loadGifsData
@@ -117,13 +119,6 @@ static const
 
     NSString * menuPlistPath = [[NSBundle mainBundle] pathForResource:@"GifsDataList" ofType:@"plist"];
     gifsDatalist= [NSMutableArray  arrayWithContentsOfFile:menuPlistPath];
-    
-//    NSArray *PhotoArray = [[NSBundle mainBundle] pathsForResourcesOfType:@"gif" inDirectory:@"gif"];
-//    NSMutableArray *imgQueue = [[NSMutableArray alloc] initWithCapacity:PhotoArray.count];
-//    for (NSString* path in PhotoArray) {
-//        [imgQueue addObject:[UIImage imageWithContentsOfFile:path]];
-//    }
-//    gifsDatalist = imgQueue;
 
 }
 
@@ -160,7 +155,6 @@ static const
     [scrollview addSubview:scrollviewSticker];
     [scrollview addSubview:scrollviewGifs];
     [self setUpSubScrollView];
-//    [self.view addSubview:stickersCollectionView];
     
 
 }
@@ -196,7 +190,11 @@ static const
         UITapGestureRecognizer * imageTapGasture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(copyStickerimage:)];
         imageTapGasture.numberOfTapsRequired =1;
         [imageView addGestureRecognizer:imageTapGasture];
-        imageView.image = stickersDatalist[i];
+        NSDictionary * dic = stickersDatalist[i];
+        NSURL *url1 = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"sticker/%@", dic[@"name"]] withExtension:@"png"];
+        NSData * data = [NSData dataWithContentsOfURL:url1];
+        imageView.image = [UIImage imageWithData:data];
+        
         imageView.userInteractionEnabled = YES;
         imageView.contentMode = UIViewContentModeScaleAspectFill;
          columns++;
@@ -253,10 +251,20 @@ static const
 - (void) copyStickerimage:(UITapGestureRecognizer *) tapGes
 {
     UIImageView * imageViews = (UIImageView *) tapGes.view;
+    int indeximage = (int)imageViews.tag -100;
+    NSDictionary * dic = stickersDatalist[indeximage];
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-//    NSData *data = [NSData dataWithContentsOfFile:filePath];
-    [pasteboard setImage:imageViews.image];
-    [self.textDocumentProxy insertText:[pasteboard string]];
+    NSURL *url1 = [[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"sticker/%@", dic[@"name"]] withExtension:@"png"];
+    NSData *data = [NSData dataWithContentsOfURL:url1];
+    UIImage* image =[UIImage imageWithData:data];
+    pasteboard.image =image;
+    
+    pasteboard.string = dic[@"name"];
+    
+    
+    
+    
+
     
 }
 - (void)scrollViewDidScroll:(UIScrollView *)_scrollView
@@ -327,7 +335,6 @@ static const
     } else {
         textColor = [UIColor blackColor];
     }
-//    [self.nextKeyboardButton setTitleColor:textColor forState:UIControlStateNormal];
 }
 
 

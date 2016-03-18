@@ -10,6 +10,7 @@
 #import "UIImage+animatedGIF.h"
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *imageViews;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 
 @end
