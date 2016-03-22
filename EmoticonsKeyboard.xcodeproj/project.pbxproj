@@ -12,6 +12,7 @@
 		847026731C955EE500363091 /* emoticionsKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847026721C955EE500363091 /* emoticionsKeyboard.storyboard */; };
 		847026751C957D8900363091 /* keyart.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847026741C957D8900363091 /* keyart.xcassets */; };
 		8470267B1C958AB300363091 /* collectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8470267A1C958AB300363091 /* collectionView.xib */; };
+		C83258C61CA14994008949A5 /* viewDrawToRect.m in Sources */ = {isa = PBXBuildFile; fileRef = C83258C51CA14994008949A5 /* viewDrawToRect.m */; };
 		C85119391C991BE6003DFBB4 /* GifsDataList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85119381C991BE6003DFBB4 /* GifsDataList.plist */; };
 		C851194A1C9959F8003DFBB4 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C85119491C9959F8003DFBB4 /* UIImage+animatedGIF.m */; };
 		C851194B1C9959F8003DFBB4 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C85119491C9959F8003DFBB4 /* UIImage+animatedGIF.m */; };
@@ -77,6 +78,8 @@
 		847026721C955EE500363091 /* emoticionsKeyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = emoticionsKeyboard.storyboard; sourceTree = "<group>"; };
 		847026741C957D8900363091 /* keyart.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = keyart.xcassets; sourceTree = "<group>"; };
 		8470267A1C958AB300363091 /* collectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = collectionView.xib; sourceTree = "<group>"; };
+		C83258C41CA14994008949A5 /* viewDrawToRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewDrawToRect.h; sourceTree = "<group>"; };
+		C83258C51CA14994008949A5 /* viewDrawToRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = viewDrawToRect.m; sourceTree = "<group>"; };
 		C85119381C991BE6003DFBB4 /* GifsDataList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GifsDataList.plist; sourceTree = "<group>"; };
 		C85119481C9959F8003DFBB4 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		C85119491C9959F8003DFBB4 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 				C896FC1D1C93E42100DDFB6F /* Info.plist */,
 				C896FC151C93E42100DDFB6F /* EmoticonsKeyboard.xcdatamodeld */,
 				C896FC091C93E42100DDFB6F /* Supporting Files */,
+				C83258C41CA14994008949A5 /* viewDrawToRect.h */,
+				C83258C51CA14994008949A5 /* viewDrawToRect.m */,
 			);
 			path = EmoticonsKeyboard;
 			sourceTree = "<group>";
@@ -399,6 +404,7 @@
 				C896FC171C93E42100DDFB6F /* EmoticonsKeyboard.xcdatamodeld in Sources */,
 				C896FC111C93E42100DDFB6F /* ViewController.m in Sources */,
 				C896FC0E1C93E42100DDFB6F /* AppDelegate.m in Sources */,
+				C83258C61CA14994008949A5 /* viewDrawToRect.m in Sources */,
 				C896FC0B1C93E42100DDFB6F /* main.m in Sources */,
 				C851194A1C9959F8003DFBB4 /* UIImage+animatedGIF.m in Sources */,
 			);
